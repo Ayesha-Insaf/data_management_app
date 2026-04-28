@@ -1,17 +1,59 @@
-# data_management_app
+#  Data Management App (Flutter)
 
-A new Flutter project.
+##  Overview
+This is a Flutter application developed as part of an internship assignment.  
+It demonstrates **state management using setState** and **persistent local storage using SharedPreferences**.
 
-## Getting Started
+The app contains two main modules:
+-  Counter App
+-  To-Do List App
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+##  Features
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+###  Counter App
+- Increment and decrement counter value
+- Uses `setState` for state management
+- Saves data locally using `SharedPreferences`
+- Restores last saved value on app restart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+###  To-Do List App
+- Add new tasks
+- Delete tasks from list
+- Displays tasks in a scrollable ListView
+- Saves tasks locally using `SharedPreferences`
+- Data persists even after app restart
+
+---
+
+##  Technologies Used
+- Flutter
+- Dart
+- SharedPreferences (Local Storage)
+- Material 3 UI
+
+---
+
+##  Local Storage Implementation
+- Counter value stored with key: `counter`
+- Task list stored as JSON string with key: `tasks`
+
+---
+
+##  Project Structure
+lib/
+├── main.dart
+├── CounterPage
+├── TodoPage
+
+---
+
+##  How to Run the Project
+
+### 1. Install dependencies
+```bash
+flutter pub get
+flutter run
